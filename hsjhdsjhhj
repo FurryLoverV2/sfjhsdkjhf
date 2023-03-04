@@ -1,0 +1,45 @@
+local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Rayfield/main/source"))()
+local Window =
+Rayfield:CreateWindow(
+    {
+        Name = "Blox Fruits",
+        LoadingTitle = "Blox Fruits [EVENT!]",
+        LoadingSubtitle = "Script Loading..",
+        ConfigurationSaving = {
+            Enabled = true,
+            FolderName = nil,
+            FileName = "BloxFruits(Event)"
+        },
+        Discord = {
+            Enabled = false,
+            Invite = "",
+            RememberJoins = true
+        },
+        KeySystem = true,
+        KeySettings = {
+            Title = "Event Hub",
+            Subtitle = "Key System",
+            Note = "Join the discord",
+            FileName = "BloxFruitsKey",
+            SaveKey = true,
+            GrabKeyFromSite = false,
+            Key = "best"
+        }
+    }
+)
+
+-- CREDITS TAB
+
+local CreditsTab = Window:CreateTab("Credits")
+local CreditsSection = CreditsTab:CreateSection("Credits")
+
+local Paragraph =
+CreditsTab:CreateParagraph(
+{Title = "Credits", Content = "Thanks to : Event!Chara#0001"}
+)
+
+
+-- MAIN TAB
+
+local MainTab = Window:CreateTab("Main")
+local AutofarmSection = MainTab:CreateSection("Autofarm")
